@@ -1,2 +1,135 @@
 "hai ratna" 
-wowww
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Ratna</title>
+ </head>
+ <body>
+    <marquee direction="right" style="font-size: 25px; font-family: 'Franklin Gothic Heavy', Times, serif; color:rgb(0, 0, 0); background:black(194, 16, 16)(248, 248, 248)" >HAI APA KABAR</marquee>
+    <marquee direction="left" style="font-size: 25px; font-family: 'Franklin Gothic Heavy', Times, serif; color:#000000; background:black(194, 16, 16)(248, 248, 248)" >RATNA WULANDARI</marquee>
+ </body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+ window.onload = function() { jam(); }
+
+ function jam() {
+  var e = document.getElementById('jam'),
+  d = new Date(), h, m, s;
+  h = d.getHours();
+  m = set(d.getMinutes());
+  s = set(d.getSeconds());
+
+  e.innerHTML = h +':'+ m +':'+ s;
+
+  setTimeout('jam()', 1000);
+ }
+
+ function set(e) {
+  e = e < 10 ? '0'+ e : e;
+  return e;
+ }
+</script>
+</head>
+<body>
+<center>
+<h1 style="font-size: 100px; font-family: 'arial', Times, serif; color:rgb(0, 0, 0); background:black(194, 16, 16)(248, 248, 248)" id="jam"></h1>
+</center>
+</body>
+</html>
+<html>
+<head>
+<title>Kalender</title>
+</head>
+<body>
+<script type="Text/Javascript">
+var months = new Array();
+months[0] = "Januari";
+months[1] = "Februari";
+months[2] = "Maret";
+months[3] = "April";
+months[4] = "Mei";
+months[5] = "Juni";
+months[6] = "Juli";
+months[7] = "Agustus";
+months[8] = "September";
+months[9] = "Oktober";
+months[10] = "Nopember";
+months[11] = "Desember";
+
+var currentDate = new Date();
+var currentMonth = currentDate.getMonth();
+var hariini=currentDate.getDate();
+currentDate.setDate(1);
+document.write("<table align='center' border=1 cellpadding=3 cellspacing=0>");
+document.write("<tr>");
+document.write("<td colspan=7 align='center'><strong>"+ months[currentMonth] +"</strong></td>");
+document.write("</tr>")
+document.write("<tr bgcolor='#AAAAAA'>");
+document.write("<td align='center'>Minggu</td>");
+document.write("<td align='center'>Senin</td>");
+document.write("<td align='center'>Selasa</td>");
+document.write("<td align='center'>Rabu</td>");
+document.write("<td align='center'>Kamis</td>");
+document.write("<td align='center'>Jum'at</td>");
+document.write("<td align='center'>Sabtu</td>");
+document.write("</tr>");
+
+if (currentDate.getDay() != 0)
+{
+document.write("<tr>");
+for (i = 0; i < currentDate.getDay(); i++)
+{
+document.write("<td>&nbsp;</td>");
+}
+}
+
+while (currentDate.getMonth() == currentMonth)
+{
+if (currentDate.getDay == 0)
+{
+document.write("<tr>");
+}
+
+if (hariini==currentDate.getDate())
+{
+document.write("<td align='center' bgcolor='#00FF00'> <font color='#0000FF'><strong>" + currentDate.getDate() + "</strong></font></td>");
+}
+
+else
+{
+document.write("<td align='center'>" + currentDate.getDate() + "</td>");
+}
+
+if (currentDate.getDay() == 6)
+{
+document.write("</tr>");
+}
+currentDate.setDate(currentDate.getDate() + 1);
+}
+
+for (i = currentDate.getDay(); i <= 6; i++)
+{
+document.write("<td>&nbsp;</td>");
+}
+
+document.write("</table>");
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Ratna</title>
+ </head>
+ <body>
+  <marquee bgcolor="yellow" width="auto">Jaga Kesehatan Ya :D</marquee>
+ </body>
+git init
+git add <eweww class="html"></eweww>
+git commit -m "first commit"
+git remote add origin https://github.com/ratna201/ratna201.github.io.git
+git push -u origin master
+</html>
